@@ -1,0 +1,38 @@
+$red: #E84545;
+$color_texttitle:#2D3033;
+$color_text:#6C7279;
+.features {
+    padding: 120px 0 49px;
+    &_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &_item {
+        flex-basis: 18.5rem;
+        display: inline-block;
+        margin-bottom: 4.625rem;
+        &__icon {
+            font-family: "Font Awesome 5 Free","Font Awesome 5 Brand"; 
+            font-weight: 600;
+            color: $red;
+            font-size: 3.75rem;
+            text-align: center;
+        }
+        &__title {
+            margin-top: 2.125rem;
+            font-size: 0.875rem;
+        }
+        &__text {
+            margin-top: 1.5625rem;
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .features_wrapper {
+        display: block;
+        margin: 0 auto;
+        max-width: 20rem;
+    }
+}

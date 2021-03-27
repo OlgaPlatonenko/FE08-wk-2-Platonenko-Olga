@@ -1,0 +1,115 @@
+$light_color: #ffffff;
+$red: #E84545;
+.header {
+    padding: 2.375rem 0 9.8125rem;
+    width: 100vw;
+    background-image: url("../img/backgrn.jpg");
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -15px;
+}
+
+.burger_menu {
+    display: none;
+}
+
+.nav_logo {
+    margin: 15px;
+    &__img {
+        max-width: 189px;
+    }
+}
+
+.nav_logo:hover {
+    cursor: pointer;
+}
+
+.nav_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    &__item {
+        margin-right: 3.6875rem;
+        &__link {
+            font-family: Raleway;
+            font-size: 0.8125rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #ffffff;
+            position: relative;
+        }
+        &__link::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: $light_color;
+            transition: width 0.3s;
+        }
+        &__link:hover::after {
+            width: 100%;
+        }
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+}
+
+.header_main {
+    display: block;
+    &::before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: $light_color;
+        display: block;
+        margin: auto;
+        margin-top: 1.5625rem;
+    }
+    &__title {
+        margin-top: 9.6875rem;
+        font-family: OpenSans;
+        font-size: 4.0625rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        color: $light_color;
+    }
+    &__text {
+        margin-top: 2.5625rem;
+        font-family: Raleway;
+        font-size: 1.375rem;
+        text-align: center;
+        color: $light_color;
+    }
+    &__btn {
+        width: 200px;
+    }
+}
+
+@media(max-width:1024px) {
+    .nav_wrapper__item {
+        margin-right: 2.8rem;
+    }
+}
+
+@media(max-width:768px) {
+    .nav_wrapper__item {
+        margin-right: 2rem;
+    }
+    .nav_logo__img {
+        width: 120px;
+    }
+}
+
+@media(max-width:576px) {
+    .nav_wrapper {
+        display: none;
+    }
+}

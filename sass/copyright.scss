@@ -1,0 +1,30 @@
+.copyright {
+    padding: 1.875rem 0 1.875rem;
+    background-color: #313454;
+    &_content {
+        max-width: 194.5rem;
+        &__str {
+            font-family: Raleway;
+            font-size: 0.875rem;
+            font-weight: 400;
+            text-align: center;
+            color: #808080;
+        }
+        &__str:last-child {
+            margin-top: 10px;
+        }
+    }
+}
+
+i.heart {
+    color: red;
+}
+
+i.heart::after {
+    content: " by Kamal Chaneman";
+    font-family: Raleway;
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #cccccc;
+}
+

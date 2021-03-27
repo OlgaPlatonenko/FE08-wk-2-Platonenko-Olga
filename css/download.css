@@ -1,0 +1,28 @@
+.download {
+  padding: 6.1875rem 0 6.1875rem;
+}
+
+.download_content__link {
+  width: 17.5625rem;
+  margin-top: 2.4375rem;
+}
+
+.download_content__title {
+  color: #2D3033;
+  font-family: Raleway;
+  font-size: 1.75rem;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.download_content__text {
+  color: #2D3033;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+/*# sourceMappingURL=download.css.map */

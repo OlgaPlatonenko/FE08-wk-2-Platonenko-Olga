@@ -1,0 +1,30 @@
+$light_color: #ffffff;
+$red: #E84545;
+$color_texttitle:#2D3033;
+$color_text:#6C7279;
+.download {
+    padding: 6.1875rem 0 6.1875rem;
+    &_content {
+        &__link {
+            width: 17.5625rem;
+            margin-top: 2.4375rem;
+        }
+        &__title {
+            color: $color_texttitle;
+            font-family: Raleway;
+            font-size: 1.75rem;
+            font-weight: 400;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        &__text {
+            color: $color_texttitle;
+            font-family: Raleway;
+            font-weight: 700;
+            font-size: 0.8125rem;
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 1rem;
+        }
+    }
+}

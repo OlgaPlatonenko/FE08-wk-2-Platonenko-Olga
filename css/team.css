@@ -1,0 +1,113 @@
+.team {
+  padding: 6.3125rem 0 6.1875rem;
+}
+
+.team_item {
+  margin-right: 1.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.team_item__foto {
+  position: relative;
+  padding: 0 0 100% 0;
+}
+
+.team_item__foto__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team_item__name {
+  color: #2D3033;
+  font-family: Raleway;
+  font-weight: 400;
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 1.375rem;
+  margin-top: 1.75rem;
+}
+
+.team_item__position {
+  color: #E84545;
+  font-family: Raleway;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 0.8125rem;
+  margin-top: 1rem;
+}
+
+.team_item__descr {
+  color: #6C7279;
+  font-family: Raleway;
+  font-weight: 400;
+  text-align: left;
+  font-size: 0.875rem;
+  margin-top: 1.8125rem;
+}
+
+.team_item__social {
+  margin-top: 1.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.team_item__social__icon {
+  width: 2.5625rem;
+  height: 2.5625rem;
+  border: 1px solid #6C7279;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 3px;
+}
+
+.team_item:last-child {
+  margin-right: 0;
+}
+
+.team-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+i.social_icon {
+  color: #6C7279;
+  font-size: 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+i.social_icon:hover {
+  color: #2D3033;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=team.css.map */

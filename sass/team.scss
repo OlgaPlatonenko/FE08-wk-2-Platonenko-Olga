@@ -1,0 +1,84 @@
+$light_color: #ffffff;
+$red: #E84545;
+$color_texttitle:#2D3033;
+$color_text:#6C7279;
+.team {
+    padding: 6.3125rem 0 6.1875rem;
+    &_item {
+        margin-right: 1.875rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__foto {
+            position: relative;
+            padding: 0 0 100% 0;
+            &__img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__name {
+            color: $color_texttitle;
+            font-family: Raleway;
+            font-weight: 400;
+            text-align: left;
+            text-transform: capitalize;
+            font-size: 1.375rem;
+            margin-top: 1.75rem;
+        }
+        &__position {
+            color: $red;
+            font-family: Raleway;
+            font-weight: 400;
+            text-align: left;
+            text-transform: uppercase;
+            font-size: 0.8125rem;
+            margin-top: 1rem;
+        }
+        &__descr {
+            color: $color_text;
+            font-family: Raleway;
+            font-weight: 400;
+            text-align: left;
+            font-size: 0.875rem;
+            margin-top: 1.8125rem;
+        }
+        &__social {
+            margin-top: 1.875rem;
+            display: flex;
+            justify-content: flex-start;
+            &__icon {
+                width: 2.5625rem;
+                height: 2.5625rem;
+                border: 1px solid $color_text;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 3px;
+            }
+        }
+    }
+    &_item:last-child {
+        margin-right: 0;
+    }
+}
+
+.team-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+i.social_icon {
+    color: $color_text;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+i.social_icon:hover {
+    color: $color_texttitle;
+    font-size: 2rem;
+}

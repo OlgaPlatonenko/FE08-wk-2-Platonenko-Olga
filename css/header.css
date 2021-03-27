@@ -1,0 +1,135 @@
+.header {
+  padding: 2.375rem 0 9.8125rem;
+  width: 100vw;
+  background-image: url("../img/backgrn.jpg");
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -15px;
+}
+
+.burger_menu {
+  display: none;
+}
+
+.nav_logo {
+  margin: 15px;
+}
+
+.nav_logo__img {
+  max-width: 189px;
+}
+
+.nav_logo:hover {
+  cursor: pointer;
+}
+
+.nav_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 15px;
+}
+
+.nav_wrapper__item {
+  margin-right: 3.6875rem;
+}
+
+.nav_wrapper__item__link {
+  font-family: Raleway;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+}
+
+.nav_wrapper__item__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #ffffff;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
+}
+
+.nav_wrapper__item__link:hover::after {
+  width: 100%;
+}
+
+.nav_wrapper__item:last-child {
+  margin-right: 0;
+}
+
+.header_main {
+  display: block;
+}
+
+.header_main::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  display: block;
+  margin: auto;
+  margin-top: 1.5625rem;
+}
+
+.header_main__title {
+  margin-top: 9.6875rem;
+  font-family: OpenSans;
+  font-size: 4.0625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.header_main__text {
+  margin-top: 2.5625rem;
+  font-family: Raleway;
+  font-size: 1.375rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.header_main__btn {
+  width: 200px;
+}
+
+@media (max-width: 1024px) {
+  .nav_wrapper__item {
+    margin-right: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav_wrapper__item {
+    margin-right: 2rem;
+  }
+  .nav_logo__img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav_wrapper {
+    display: none;
+  }
+}
+/*# sourceMappingURL=header.css.map */

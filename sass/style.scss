@@ -1,0 +1,90 @@
+@import url("header.css");
+@import url("features.css");
+@import url("work.css");
+@import url("team.css");
+@import url("footer.css");
+@import url("copyright.css");
+@import url("download.css");
+$light_color: #ffffff;
+$red: #E84545;
+$color_texttitle:#2D3033;
+$color_text:#6C7279;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.text_describe {
+    color: $color_text;
+    font-family: Raleway;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.text_minititle {
+    color: $color_texttitle;
+    font-family: Raleway;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media(max-width:1024px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@mixin btn() {
+    display: block;
+    margin: 4.75rem auto;
+    padding: 19px 46px 18px;
+    background-color: $red;
+    color: $light_color;
+    font-family: Raleway;
+    font-size: 0.8125rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.btn {
+    display: block;
+    margin: 4.75rem auto;
+    padding: 19px 46px 18px;
+    background-color: $red;
+    color: $light_color;
+    font-family: Raleway;
+    font-size: 0.8125rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: $light_color;
+    color: $red;
+    font-weight: 700;
+    transform: scale(1.3, 1.3);
+    border: 1px solid $red;
+}
+
+.my-slick{
+    width: 750px;
+}
