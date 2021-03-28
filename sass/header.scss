@@ -1,5 +1,8 @@
 $light_color: #ffffff;
 $red: #E84545;
+.burger-menu_nav{
+    display: none;
+}
 .header {
     padding: 2.375rem 0 9.8125rem;
     width: 100vw;
@@ -89,7 +92,7 @@ $red: #E84545;
         color: $light_color;
     }
     &__btn {
-        width: 200px;
+        width: 250px;
     }
 }
 
@@ -111,5 +114,8 @@ $red: #E84545;
 @media(max-width:576px) {
     .nav_wrapper {
         display: none;
+    }
+    .burger-menu_nav{
+        display: block;
     }
 }

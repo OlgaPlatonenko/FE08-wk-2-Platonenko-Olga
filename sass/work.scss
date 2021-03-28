@@ -2,56 +2,83 @@ $light_color: #ffffff;
 $red: #E84545;
 $color_texttitle:#2D3033;
 $color_text:#6C7279;
-.work-slick{
+.container-slick{
+    display: none;   
+}
+.xs-show {
     display: none;
 }
 .work {
     width: 100wh;
     padding-top: 3.0625rem;
     &-wrapper {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        -ms-grid-row-align: center;
-        &_item {
-           max-height: 470px;
-           overflow: hidden;
-            &__img {               
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &_item{
+        border: 1px solid white;
+        width: 25%;
+        max-height: 350px;
+        overflow: hidden;
+        position: relative;
+        &__img{
+            padding: 0 0 100% 0;
+            overflow: hidden;
+            &__pic{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                object-position: center;
-                position: relative;
-            }
-           &__img::after {
-                content: "";
-                width: 100%;
-                height: 100%;
-                background-color: rgba(235, 75, 75, 0.55);
                 position: absolute;
                 top: 0;
                 left: 0;
             }
+
         }
     }
+    &_item:hover::after{
+        content:"";
+        width: 100%;
+        height: 100%;
+        display:block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(248, 76, 76, 0.5);
+        
+    }
+    &_item:hover::before{
+        content:"project name";
+        color: $color_texttitle;
+        font-family: Raleway;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        
+    }
+      
 }
 
 
-/*
-.features_item::after {
-    width: 100%;
-    height: 100%;
-    background-color: red;
-    opacity: 0.7;
-}*/
 
-@media(max-width:1024px) {
+@media(max-width:768px) {
     .work-wrapper{
         display: none;
     }
-    .work-slick{
-        display: block;
-        width: 450px;
+    .work{
+        background-color: #3A3E64;
     }
+    .container-slick{
+        display: block;       
+        margin: 0 auto;
+        
+       max-width: 450px;
+        max-height: 450px;
+        padding: 0 15px;
+        &__item{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+       }
+       }
     
 }

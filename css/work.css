@@ -1,4 +1,8 @@
-.work-slick {
+.container-slick {
+  display: none;
+}
+
+.xs-show {
   display: none;
 }
 
@@ -8,54 +12,75 @@
 }
 
 .work-wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  -ms-grid-row-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.work-wrapper_item {
-  max-height: 470px;
+.work_item {
+  border: 1px solid white;
+  width: 25%;
+  max-height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.work_item__img {
+  padding: 0 0 100% 0;
   overflow: hidden;
 }
 
-.work-wrapper_item__img {
+.work_item__img__pic {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  position: relative;
-}
-
-.work-wrapper_item__img::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: rgba(235, 75, 75, 0.55);
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/*
-.features_item::after {
-    width: 100%;
-    height: 100%;
-    background-color: red;
-    opacity: 0.7;
-}*/
-@media (max-width: 1024px) {
+.work_item:hover::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(248, 76, 76, 0.5);
+}
+
+.work_item:hover::before {
+  content: "project name";
+  color: #2D3033;
+  font-family: Raleway;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
   .work-wrapper {
     display: none;
   }
-  .work-slick {
+  .work {
+    background-color: #3A3E64;
+  }
+  .container-slick {
     display: block;
-    width: 450px;
+    margin: 0 auto;
+    max-width: 450px;
+    max-height: 450px;
+    padding: 0 15px;
+  }
+  .container-slick__item {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /*# sourceMappingURL=work.css.map */

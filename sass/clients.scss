@@ -1,0 +1,77 @@
+$light_color: #ffffff;
+$red: #E84545;
+$color_texttitle:#2D3033;
+$color_text:#6C7279;
+.clients{
+    padding-right: 5px;
+    display: flex;
+    background-color: #53354A;
+    &_left{
+        width: 50vw;
+        position: relative;
+        max-height: 31.4375rem;
+        overflow: hidden;
+        .clients_foto{
+            padding: 0 0 100% 0;
+            overflow: hidden;
+            &__img{          
+                width: 100%;
+                height: 100%;
+                object-fit:cover;
+               background-position: center;
+                position: absolute;
+                top: 0;
+                left: 0;
+     
+            }
+        }
+      
+    }
+    &_review{
+       width: 50vw;     
+       display: block;
+        &-content{
+            margin-left: 5.25rem;  
+            &__text{
+                color: $light_color;
+                font-family: Cardo-Italic;
+                font-size: 2.25rem;
+                text-align: left;
+                font-weight: 400;
+                font-style: italic;
+                max-width: 31.25rem;
+                margin-top: 7.1875rem;
+                             
+            }
+            &__name{
+                color: $light_color;
+                font-size: 0.8125rem;
+                text-align: left;
+                text-transform: uppercase;
+                margin-top: 1.875rem;
+              
+            }
+        }
+    }
+}
+
+@media(max-width:1024px) {
+    .clients_review-content{
+        margin-left: 0.5rem;        
+            }
+   .clients_review-content__text{
+       font-size: 2rem;
+    }
+}
+
+@media(max-width:768px) {
+    .clients{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .clients_left{
+        width: 100vw;
+
+    }
+}

@@ -1,3 +1,7 @@
+.burger-menu_nav {
+  display: none;
+}
+
 .header {
   padding: 2.375rem 0 9.8125rem;
   width: 100vw;
@@ -109,7 +113,7 @@
 }
 
 .header_main__btn {
-  width: 200px;
+  width: 250px;
 }
 
 @media (max-width: 1024px) {
@@ -130,6 +134,9 @@
 @media (max-width: 576px) {
   .nav_wrapper {
     display: none;
+  }
+  .burger-menu_nav {
+    display: block;
   }
 }
 /*# sourceMappingURL=header.css.map */

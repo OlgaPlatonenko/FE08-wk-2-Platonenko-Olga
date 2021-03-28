@@ -110,4 +110,18 @@ i.social_icon:hover {
   color: #2D3033;
   font-size: 2rem;
 }
+
+@media (max-width: 768px) {
+  .team-wrapper {
+    display: block;
+  }
+  .team_item {
+    max-width: 270px;
+    margin: 15px auto;
+  }
+  .team_item:last-child {
+    max-width: 270px;
+    margin: 15px auto;
+  }
+}
 /*# sourceMappingURL=team.css.map */

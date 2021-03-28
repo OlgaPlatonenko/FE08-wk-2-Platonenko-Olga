@@ -5,6 +5,7 @@
 @import url("footer.css");
 @import url("copyright.css");
 @import url("download.css");
+@import url("clients.css");
 $light_color: #ffffff;
 $red: #E84545;
 $color_texttitle:#2D3033;
@@ -81,6 +82,7 @@ $color_text:#6C7279;
     background-color: $light_color;
     color: $red;
     font-weight: 700;
+    font-size: 0.8125rem;
     transform: scale(1.3, 1.3);
     border: 1px solid $red;
 }
