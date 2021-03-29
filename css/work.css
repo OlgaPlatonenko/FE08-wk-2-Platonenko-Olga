@@ -54,12 +54,21 @@
 }
 
 .work_item:hover::before {
-  content: "project name";
-  color: #2D3033;
+  content: "project name User Interface Design";
+  display: inline-block;
+  width: 139px;
+  color: #ffffff;
   font-family: Raleway;
+  font-size: 14px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -70px;
+  margin-top: -30px;
+  z-index: 2;
 }
 
 @media (max-width: 768px) {

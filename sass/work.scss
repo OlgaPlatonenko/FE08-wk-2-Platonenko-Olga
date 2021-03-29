@@ -43,19 +43,27 @@ $color_text:#6C7279;
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgba(248, 76, 76, 0.5);
+        background-color: rgba(248, 76, 76, 0.5);       
         
     }
     &_item:hover::before{
-        content:"project name";
-        color: $color_texttitle;
+        content:"project name User Interface Design";
+        display: inline-block;
+        width: 139px;
+        color: $light_color;
         font-family: Raleway;
+        font-size: 14px;
         font-weight: 700;
         text-align: center;
-        text-transform: uppercase;
-        
+        text-transform: uppercase;        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -70px;
+        margin-top: -30px;
+        z-index: 2;        
     }
-      
+         
 }
 
 
