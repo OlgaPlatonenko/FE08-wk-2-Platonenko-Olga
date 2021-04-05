@@ -31,11 +31,19 @@
 
 .clients_review {
   width: 50vw;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .clients_review-content {
-  margin-left: 5.25rem;
+  /* margin-left: 5.25rem;  */
 }
 
 .clients_review-content__text {
@@ -54,7 +62,7 @@
   font-size: 0.8125rem;
   text-align: left;
   text-transform: uppercase;
-  margin-top: 1.875rem;
+  /*    margin-top: 1.875rem;*/
 }
 
 @media (max-width: 1024px) {

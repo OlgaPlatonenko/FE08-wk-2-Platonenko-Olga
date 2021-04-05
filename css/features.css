@@ -47,6 +47,11 @@
   }
 }
 
+.features_item__icon {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 i.fal:hover {
   -webkit-transform: scale(1.3, 1.3);
           transform: scale(1.3, 1.3);

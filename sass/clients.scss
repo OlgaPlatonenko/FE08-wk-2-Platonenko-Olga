@@ -29,9 +29,11 @@ $color_text:#6C7279;
     }
     &_review{
        width: 50vw;     
-       display: block;
+       display: flex;
+       justify-content: center;
+       align-items: center;
         &-content{
-            margin-left: 5.25rem;  
+           /* margin-left: 5.25rem;  */
             &__text{
                 color: $light_color;
                 font-family: Cardo-Italic;
@@ -48,7 +50,7 @@ $color_text:#6C7279;
                 font-size: 0.8125rem;
                 text-align: left;
                 text-transform: uppercase;
-                margin-top: 1.875rem;
+            /*    margin-top: 1.875rem;*/
               
             }
         }

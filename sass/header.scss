@@ -7,6 +7,9 @@ $red: #E84545;
     padding: 2.375rem 0 9.8125rem;
     width: 100vw;
     background-image: url("../img/backgrn.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .nav {
@@ -34,7 +37,8 @@ $red: #E84545;
 .nav_wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 15px;
+    align-items: center;
+    margin: 0 15px;
     &__item {
         margin-right: 3.6875rem;
         &__link {
@@ -94,13 +98,8 @@ $red: #E84545;
     &__btn {
         width: 250px;
     }
+
 }
-
-/*FOR MENU*BURGER*/
-
-
-
-  /*END MENU BURGER*/
 
 @media(max-width:1024px) {
     .nav_wrapper__item {
@@ -115,124 +114,94 @@ $red: #E84545;
     .nav_logo__img {
         width: 120px;
     }
+    .header_main__title {
+        font-size: 2.5rem;
+    }
+     
 }
 
 @media(max-width:576px) {
-    .nav_wrapper {
+   .nav_wrapper {
         display: none;
     }
-    .xs{
-         display: block;  
+
+    .header__nav {
+        display: block;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        background: #313454;
+        box-shadow: #ccc;
+        width: 100%;
+        height: 100vh;
+        box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.17);
+        left: -100%;
+        transition: all 0.4s ease;
+    }
+    .header__nav.open-menu {
+        left: 0;
+    }
+  .nav_logo{
+      display: none;
+  }
+    .header__menu {
+        display: block;
+    }
+    .header__menu li {
+        margin: 40px 0px 40px 33px;
+        text-align: center;
+    }
+    .menu__item{
+        color: #ffffff; 
+        font-size: 14px;
+        font-family: Raleway;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+      .menu-burger__header {
+      position: relative; 
+      width: 40px; 
+      right: -90%;    
+     
+      display: block;     
+  }
+  .menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    background: #515758;
+    margin: 0 auto;
 }
-.nav-bar {
-  position: absolute;
-  background-color: #3A3E64;
-  top: 0;
-  right: 100%;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: position 2.9s;
-  -webkit-transition: position 2.9s;
-  -moz-transition: position 2.9s;
-  -ms-transition: position 2.9s;
-  -o-transition: position 2.9s;
+.menu-burger__header span{
+    top: 21px;
+}
+.menu-burger__header:after, .menu-burger__header:before{
+    content: '';
+}
+.menu-burger__header:after{
+    bottom: 5px;
+}
+.menu-burger__header:before{
+    top: 5px;
+}
+/*если произошел клик по иконке к бургеру доб класс open-menu и описываем его*/
+.menu-burger__header.open-menu span {
+  opacity:0; 
+  transition: 0.5s; 
+}
+.menu-burger__header.open-menu:before {
+  transform: translateY(3px) rotate(-45deg) ;
+ margin-bottom: -4px;
+  transition: 0.4s;
+}
+.menu-burger__header.open-menu:after {
+  transform: translateY(3px) rotate(45deg);
+  margin-bottom: -12px;
+  transition: 0.4s;
 }
 
-.toggle {
-  left: 0;
-  box-shadow: 1px 0 15px 2px rgba(0, 0, 0, 0.4);
-
 }
 
-.toggle-menu {
-  background-color: rgba(0, 0, 0, 0.2);
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 40px;
-  height: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-    padding: 2px 2px 2px 3px;
-  border-radius: 5px;
-  cursor: pointer;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-
-.line {
-  width: 100%;
-  height: 3px;
-  border-radius: 5px;
-  background-color: #fff;
-  transition: transform 0.2s ease-out;
-  -webkit-transition: transform 0.2s ease-out;
-  -moz-transition: transform 0.2s ease-out;
-  -ms-transition: transform 0.2s ease-out;
-  -o-transition: transform 0.2s ease-out;
-}
-
-.toggle .line1 {
-  background-color: #000000;
-  transform: scale(0.9) rotateZ(-45deg) translate(-6px, 4px);
-}
-
-.toggle .line2 {
-  display: none;
-}
-
-.toggle .line3 {
-  background-color: #000000;
-  transform: scale(0.9) rotateZ(45deg) translate(-6px, -4px);
-}
-
-.toggle .toggle-menu {
-  background-color: white;
-}
-
-.nav-list {
-  list-style: none;
-}
-
-.nav-list-item {
-  text-align: center;
-  padding: 10px 0;
-}
-
-.nav-link {
-  color: #fff;
-  font-size: 22px;
-  text-decoration: none;
-  position: relative;
-  padding-bottom: 4px;
-  text-transform: uppercase;
-}
-
-.nav-link::before {
-  position: absolute;
-  content: '';
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  background-color: #fff;
-  transform: scaleX(0);
-  transition: transform 0.4s ease-in-out;
-  transform-origin: left;
-  -webkit-transition: transform 0.4s ease-in-out;
-  -moz-transition: transform 0.4s ease-in-out;
-  -ms-transition: transform 0.4s ease-in-out;
-  -o-transition: transform 0.4s ease-in-out;
-}
-
-.nav-link:hover::before {
-  transform: scaleX(1);
-}
-}
 
